@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>UNIVERSITY DOCS</title>
+    </head>
+    <body>
+        <label class="selectCountry-text" for="selectCountry">Countries</label>
+
+        <div class="container">
+            <select name="countries" id="selectCountry">
+                <option value="" disabled selected>Select country</option>
+            </select>
+
+            <form class="name-form">
+                <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g id="search">
+                        <path
+                            id="Icon"
+                            d="M17.5 17.7456L13.875 14.1206M15.8333 9.41227C15.8333 13.0942 12.8486 16.0789 9.16667 16.0789C5.48477 16.0789 2.5 13.0942 2.5 9.41227C2.5 5.73037 5.48477 2.74561 9.16667 2.74561C12.8486 2.74561 15.8333 5.73037 15.8333 9.41227Z"
+                            stroke="#666666"
+                            stroke-width="1.66667"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </g>
+                </svg>
+
+                <input type="text" id="name" placeholder="Name" />
+            </form>
+
+            <button id="getStarted">Get Started</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="t-name">Name</th>
+                    <th class="t-country">Country</th>
+                    <th class="t-state">State</th>
+                    <th class="t-url">URL</th>
+                </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+        </table>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
